@@ -8,10 +8,10 @@
 		"Kim-Lan"
 	],
 	"contact": {
-		"homepage": "https://fabricmc.net/",
-		"sources": "https://github.com/FabricMC/fabric-example-mod"
+		"homepage": "https://github.com/Kim-Lan/",
+		"sources": "https://github.com/Kim-Lan/strong-leads"
 	},
-	"license": "CC0-1.0",
+	"license": "MIT",
 	"icon": "assets/strongleads/icon.png",
 	"environment": "*",
 	"entrypoints": {
