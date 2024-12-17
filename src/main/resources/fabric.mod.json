@@ -2,7 +2,7 @@
 	"schemaVersion": 1,
 	"id": "strong-leads",
 	"version": "1.0.0",
-	"name": "StrongLeads",
+	"name": "Strong Leads",
 	"description": "Leads don't break.",
 	"authors": [
 		"Kim-Lan"
@@ -23,8 +23,8 @@
 		"strongleads.mixins.json"
 	],
 	"depends": {
-		"fabricloader": ">=0.15.11",
-		"minecraft": "~1.21",
+		"fabricloader": ">=0.16.9",
+		"minecraft": "~1.21.4",
 		"java": ">=21",
 		"fabric-api": "*"
 	},

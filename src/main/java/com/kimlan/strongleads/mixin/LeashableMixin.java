@@ -13,10 +13,10 @@ interface LeashableMixin {
 	@Redirect(method = "tickLeash",
 			at = @At(
 					value = "INVOKE",
-					target = "Lnet/minecraft/entity/Leashable;detachLeash()V"
+					target = "Lnet/minecraft/entity/Leashable;breakLongLeash()V"
 			)
 	)
-	private static void redirectDetachLeash(Leashable instance) {
+	private static void redirectBreakLongLeash(Leashable instance) {
 		Entity holdingEntity = instance.getLeashHolder();
 		Vec3d pos = Vec3d.ZERO;
 
