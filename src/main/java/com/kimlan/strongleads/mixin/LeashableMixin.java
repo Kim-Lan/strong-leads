@@ -1,22 +1,23 @@
 package com.kimlan.strongleads.mixin;
 
+import com.llamalad7.mixinextras.injector.wrapoperation.Operation;
+import com.llamalad7.mixinextras.injector.wrapoperation.WrapOperation;
 import net.minecraft.entity.Entity;
 import net.minecraft.entity.Leashable;
 import net.minecraft.util.math.Vec3d;
 import org.spongepowered.asm.mixin.Mixin;
 import org.spongepowered.asm.mixin.injection.At;
-import org.spongepowered.asm.mixin.injection.Redirect;
 
 @Mixin(Leashable.class)
-interface LeashableMixin {
+public interface LeashableMixin {
 
-	@Redirect(method = "tickLeash",
+	@WrapOperation(method = "tickLeash",
 			at = @At(
 					value = "INVOKE",
-					target = "Lnet/minecraft/entity/Leashable;breakLongLeash()V"
+					target = "Lnet/minecraft/entity/Leashable;snapLongLeash()V"
 			)
 	)
-	private static void redirectBreakLongLeash(Leashable instance) {
+	private static void wrapSnapLongLeash(Leashable instance, Operation<Void> original) {
 		Entity holdingEntity = instance.getLeashHolder();
 		Vec3d pos = Vec3d.ZERO;
 
