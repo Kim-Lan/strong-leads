@@ -11,7 +11,7 @@
 		"homepage": "https://github.com/Kim-Lan/",
 		"sources": "https://github.com/Kim-Lan/strong-leads"
 	},
-	"license": "MIT",
+	"license": "ARR",
 	"icon": "assets/strongleads/icon.png",
 	"environment": "*",
 	"entrypoints": {
