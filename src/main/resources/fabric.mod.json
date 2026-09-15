@@ -8,8 +8,9 @@
 		"Kim-Lan"
 	],
 	"contact": {
-		"homepage": "https://github.com/Kim-Lan",
-		"sources": "https://github.com/Kim-Lan/strong-leads"
+		"homepage": "https://modrinth.com/mod/strong-leads",
+		"sources": "https://github.com/Kim-Lan/strong-leads",
+		"issues": "https://github.com/Kim-Lan/strong-leads/issues"
 	},
 	"license": "ARR",
 	"icon": "assets/strongleads/icon.png",
@@ -23,8 +24,8 @@
 		"strongleads.mixins.json"
 	],
 	"depends": {
-		"fabricloader": ">=0.19.3",
-		"minecraft": "~26.2",
+		"fabricloader": ">=0.19.5",
+		"minecraft": "~26.3",
 		"java": ">=25",
 		"fabric-api": "*"
 	}
